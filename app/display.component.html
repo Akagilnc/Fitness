@@ -1,5 +1,14 @@
-<div ngIf="data">
+<div *ngIf="data">
     <span>Type {{data.type}}</span>
     <span>Name {{data.name}}</span>
+
+    <base-chart class="chart"
+                [datasets]="barChartDatas"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></base-chart>
 
 </div>
