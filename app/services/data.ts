@@ -16,12 +16,32 @@ export class DataService {
         return this.data;
     }
 
+    getCorrectData():Data {
+        return this.data[0];
+    }
 }
 
 var data:Array<Data> = [
     {
-        type: 'Cardio',
-        name: 'Jumping Jack Kicks'
+        type: '背部训练',
+        name: '高位下拉',
+        date: '2016-5-1',
+        maxWeight: 80,
+        groups: 1
+    },
+    {
+        type: '背部训练',
+        name: '高位下拉',
+        date: '2016-5-1',
+        maxWeight: 90,
+        groups: 2
+    },
+    {
+        type: '背部训练',
+        name: '高位下拉',
+        date: '2016-5-1',
+        maxWeight: 100,
+        groups: 3
     }
 ]
 

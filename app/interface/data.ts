@@ -4,4 +4,7 @@
 export interface Data {
     type: string;
     name: string;
+    date: Date;
+    maxWeight: number;
+    groups: number;
 }

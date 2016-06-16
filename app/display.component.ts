@@ -12,14 +12,15 @@ import {Data} from "./interface/interface";
     selector: 'display',
     directives: [CORE_DIRECTIVES, NgFor, NgClass, NgIf],
     templateUrl: './app/display.component.html',
-    provider:[DataService]
+    providers: [DataService]
 })
 
 
 export class DisplayComponent implements OnInit {
-    public data;
+    public datas: Array<Data>;
+    public data:Data;
     getData(){
-        this.data = this.dataService.getData()
+        this.datas = this.dataService.getData()
     }
 
 

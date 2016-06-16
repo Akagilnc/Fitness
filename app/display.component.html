@@ -1,5 +1,17 @@
-<div ngIf="data">
-    <span>Type {{data.type}}</span>
-    <span>Name {{data.name}}</span>
+<div *ngIf="datas">
+    <li *ngFor="let data of datas">
 
+    <span>{{data.date}}</span>
+    <p></p>
+
+
+    <span>Type {{data.type}}</span>
+    <p></p>
+    <span>Name {{data.name}}</span>
+    <p></p>
+
+    <span>{{data.groups}}</span>
+    <span>{{data.maxWeight}}</span>
+
+    </li>
 </div>
